@@ -1,3 +1,4 @@
+
 # Day Planner
 ## About
 A simple weather dashboard to check a weekly forecast of places from around the world
@@ -9,6 +10,7 @@ A simple weather dashboard to check a weekly forecast of places from around the 
 ## Deployed App
 https://au-rizer.github.io/Weather-dashboard/
 ## Screen-capture
+<img width="1434" alt="Screen Shot 2021-04-14 at 11 52 56 am" src="https://user-images.githubusercontent.com/32904314/114652352-49ed5a80-9d18-11eb-876f-8c2d4d1b3597.png">
 
 ## Aknowledgements and Author
 The Man, The Myth, The Mistake - Ricky Gobby.
