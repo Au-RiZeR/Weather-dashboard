@@ -1,23 +1,26 @@
 body {
     text-align: center;
     background-color: lightgray;
+    margin: 15px;
 }
 
 header {
-    background-color: lightslategray;
+    background-color: #D2386C;
     color: white;
+    border-radius: 10px;
+    border: solid black 1px;
+}
+
+.boxShadow {
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,.25);
+    margin-bottom: 30px;
 }
 
 main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 nav {
-    grid-column-start: 1;
-    grid-column-end: 2;
     height: auto;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 
 #search {
@@ -25,39 +28,71 @@ nav {
     display: flex;
     border: solid black 1px;
     border-radius: 10px;
+    transition: transform 300ms, box-Shadow 300ms;
+}
+
+#search:focus-within{
+    transform: scale(1.03);
 }
 
 input {
+    width: 90%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 
-button {
+#searcher {
+    width: 10%;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
 #expanded {
-    margin: 5px;
     border: solid black 1px;
     border-radius: 10px;
-    background-color: blanchedalmond;
+    background-color: rgb(241, 187, 255);
+    display: block;
+    transition: 300ms;
+}
+
+article {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 1;
 }
 
 #week {
     padding: 5px;
-    grid-column-start: 2;
-    grid-column-end: 6;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .day {
+    display: flex;
+    justify-content: space-evenly;
     padding: 5px;
-    margin: 5px;
     border: solid black 1px;
     border-radius: 10px;
-    background-color: blanchedalmond;
+    background-color: rgb(241, 187, 255);
     text-align: center;
+    transition: 300ms;
+}
+
+.day:hover {
+    transform: scale(1.03, 1.05);
+    box-shadow: 0 15px 70px 0 rgba(0,0,0,.15);
+    background-color: white;
+}
+
+#expanded:hover {
+    transform: scale(1.03, 1.05);
+    box-shadow: 0 15px 30px 0 rgba(0,0,0,.15);
+    background-color: white;
+}
+
+.search {
+
+}
+
+#searches {
+    display: block;
 }
